@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      padding: 5px;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+      padding: 5px;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100%/3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Complete the HTML here -->
+  <h1>Shrek</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/7b/Shrek_%282001_animated_feature_film%29.jpg" alt="Shrek the Movie">
+        <h3>Shrek (2001)</h3>
+        <p>
+          Once upon a time there was a lovely princess. But she had an enchantment upon her of a fearful sort, which could only be
+          broken by Love's first kiss. She was locked away in a castle guarded by a terrible fire breathing dragon. Many brave
+          knights had attempted to free her from this dreadful prison, but none prevailed.
+        </p>
+      </div>
+      <div class="column">
+        <img src="https://m.media-amazon.com/images/M/MV5BMDJhMGRjN2QtNDUxYy00NGM3LThjNGQtMmZiZTRhNjM4YzUxL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg" alt="Shrek 2">
+        <h3>Shrek 2 (2004)</h3>
+        <p>
+          After returning from their honeymoon and showing home movies to their friends, Shrek and Fiona learn that her parents
+          have heard that she has married her true love and wish to invite him to their kingdom, called Far Far Away.
+        </p>
+      </div>
+      <div class="column">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/22/Shrek_the_Third_%282007_animated_feature_film%29.jpg" alt="Shrek the Third">
+        <h3>Shrek the Third (2007)</h3>
+        <p>
+          When King Harold suddenly croaks, Shrek (Mike Myers) learns he will have to rule the land of Far, Far Away, unless he
+          can find a suitable heir to the throne.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
